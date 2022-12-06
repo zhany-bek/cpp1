@@ -1,10 +1,19 @@
 #include <iostream>
-#include <cmath>
 
 int main() {
-    int num = 6;
+    std::string name;
+    std::cout << "Please write your name: ";
+    std::getline(std::cin, name);
 
-    std::cout << (num % 2 ? "Odd" : "Even");
+    int space;
+
+    while(true) {
+        space = name.find(' ');
+        if(space < 0) break;
+        name.replace(space, 1, ".");
+    }
+
+    std::cout << "Your username is: " << name;
 
     return 0;
 }
