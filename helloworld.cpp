@@ -2,17 +2,9 @@
 #include <cmath>
 
 int main() {
-    double a;
-    double b;
-    double c;
+    int num = 6;
 
-    std::cout << "Enter side a: ";
-    std::cin >> a;
-    std::cout << "Enter side b: ";
-    std::cin >> b;
-
-    c = sqrt(pow(a, 2) + pow(b, 2));
-    std::cout << "Hypotenuse is equal to " << c;
+    std::cout << (num % 2 ? "Odd" : "Even");
 
     return 0;
 }
